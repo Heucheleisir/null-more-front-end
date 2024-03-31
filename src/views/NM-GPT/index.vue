@@ -27,8 +27,8 @@ import { useRoute } from 'vue-router';
 import RecordItem, { RecordItemType } from './components/record-item.vue';
 import SendBar from './components/send-bar.vue';
 
-const avatar_user = '/src/assets/images/avatar-user.png'
-const avatar_ai = '/src/assets/images/avatar-ai.png'
+const avatar_user = '@/assets/images/avatar-user.png'
+const avatar_ai = '@/assets/images/avatar-ai.png'
 const nickname_user = '我'
 const nickname_ai = '充满智慧的AI(目光如炬)'
 const dialogueChatContainer = ref<HTMLDivElement | null>(null)

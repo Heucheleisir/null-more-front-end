@@ -29,6 +29,7 @@ interface Props {
     changeType: ChangeType
     buttonName?: string
     bubbleColor?: string
+    disabled?: boolean
 }
 const props = defineProps<Props>();
 const bubbleButton = reactive({
@@ -37,6 +38,7 @@ const bubbleButton = reactive({
     bubbleList: [] as Array<BubbleItem>
 })
 function handleChangeStatus(keepAlive?: boolean) {
+    if (props.disabled) { return }
     initBubbleList(8)
     if (keepAlive) { return }
     bubbleButton.onAction = true

@@ -8,12 +8,12 @@
                     <div v-else-if="record.type === 'markdown'" v-html="viewHtml"></div>
                 </div>
                 <div class="record-item-avatar-block">
-                    <img class="record-item-avatar-image" :src="record.avatar">
+                    <img class="record-item-avatar-image" src="@/assets/images/avatar-user.png">
                 </div>
             </div>
             <div v-else-if="record.role === 'ai'" class="record-item-box on-left">
                 <div class="record-item-avatar-block">
-                    <img class="record-item-avatar-image" :src="record.avatar">
+                    <img class="record-item-avatar-image" src="@/assets/images/avatar-ai.png">
                 </div>
                 <div class="record-item-text">
                     <div class="record-item-nickname">{{ record.nickname }}</div>
