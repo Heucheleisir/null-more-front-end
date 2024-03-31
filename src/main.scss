@@ -1,0 +1,80 @@
+// 主色（暗色）
+$primary-color: #333333;
+
+
+// 辅助色2
+$third-color: #999999;
+
+// 强调色1（蓝色调）
+$accent-primary-color: #3366CC;
+
+// 强调色2
+$accent-secondary-color: #FF6666;
+
+// 高亮线条色与强调色呼应
+$highlight-color-1: lighten($accent-primary-color, 10%);
+$highlight-color-2: lighten($accent-secondary-color, 10%);
+$highlight-color-3: lighten($accent-primary-color, 20%);
+$highlight-color-4: lighten($accent-secondary-color, 20%);
+$highlight-color-5: lighten($accent-primary-color, 30%);
+
+// 线条色
+$border-color-1: #CCCCCC;
+$border-color-2: #DDDDDD;
+$border-color-3: #E5E5E5;
+$border-color-4: #F0F0F0;
+$border-color-5: #F5F5F5;
+
+// 禁用色
+$disabled-color: #999999;
+
+body {
+    // 辅助色1
+    $secondary-color: #666666;
+    --null-more-secondary-color: $secondary-color;
+    font-family: PingFang SC;
+    // background-color: $secondary-color;
+    color: $primary-color;
+
+    /* WebKit浏览器（如Chrome、Safari） */
+    ::-webkit-scrollbar {
+        width: 8px;
+        border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: rgba(0, 0, 0, 0.1); /* 设置透明度 */
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: rgba(0, 0, 0, 0.1); /* 设置透明度 */
+        border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: rgba(0, 0, 0, 0.3); /* 设置悬停时的透明度 */
+    }
+
+    /* Firefox浏览器 */
+    /* ::-moz-scrollbar {
+        width: 5px;
+        border-radius: 5px;
+    }
+
+    ::-moz-scrollbar-track {
+        background: rgba(0, 0, 0, 0.1); 
+    }
+
+    ::-moz-scrollbar-thumb {
+        background: rgba(0, 0, 0, 0.5); 
+        border-radius: 5px;
+    }
+
+    ::-moz-scrollbar-thumb:hover {
+        background: rgba(0, 0, 0, 0.7); 
+    } */
+}
+
+:root {
+    $color-system: #000000 #333333 #666666 #999999 #CCCCCC #0074D9 #66A3FF #99BBFF #CCE5FF #F0F7FF #FFFFFF #FFD700 #FFA500 #FF6347 #8A2BE2 #32CD32
+}
