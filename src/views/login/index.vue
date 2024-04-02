@@ -56,7 +56,7 @@ async function handleLoginClick() {
     const resLogin = await userLogin(loginForm)
     const token = resLogin?.data?.token
     token && localStorage.setItem('token', token)
-    token && router.push({ path: '/testDemo' })
+    token && router.push({ path: '/' })
 }
 </script>
 
